@@ -1,7 +1,7 @@
 class ProgressBar {
   private:
     string name_;
-    char outer_char_;
+    char[] outer_chars_;
     char inner_char_;
     unsigned int length_;
     double progress_ = 0.0;
