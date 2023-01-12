@@ -11,4 +11,5 @@ class ProgressBar {
     void updateProgress(double increase);
     void display();
     void load();
+    void reset();
 }
