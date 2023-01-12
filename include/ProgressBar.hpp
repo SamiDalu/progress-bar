@@ -6,7 +6,7 @@ class ProgressBar {
     unsigned int length_;
     double progress_ = 0.0;
   public:
-    ProgressBar(string name, char outer_char,  char inner_char, int length);
+    ProgressBar(string name, char[] outer_chars,  char inner_char, int length);
     ProgressBar();
     void updateProgress(double increase);
     void display();
