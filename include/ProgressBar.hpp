@@ -1,14 +1,15 @@
+#include <string>
 class ProgressBar {
   private:
-    string name_;
-    char[2] outer_chars_;
+    std::string name_;
+    char outer_chars_ [2];
     char inner_char_;
     unsigned int length_;
     double progress_ = 0.0;
   public:
-    ProgressBar(string name, char[2] outer_chars,  char inner_char, int length);
+    ProgressBar(std::string name, char outer_chars [2],  char inner_char, int length);
     ProgressBar();
     void updateProgress(double increase);
     void display();
     void reset();
-}
+};
