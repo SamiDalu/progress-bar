@@ -10,6 +10,8 @@ void ProgressBar::updateProgress(double increase) {
 }
 
 void ProgressBar::display() {
+	if (progress_>1)
+		progress_ = 1.0;
   std::cout<<name_<<std::endl;
   std::cout<<outer_chars_[0];
   for (int i = 0; i < length_; i++) {
@@ -18,9 +20,13 @@ void ProgressBar::display() {
       else
          std::cout<<" "; //prints space otherwise
   }
-  std::cout<<outer_chars_[1]<<" "<<(int) (progress_*100)<<"%";
+  std::cout<<outer_chars_[1]<<" "<<(int) (progress_*100)<<"%"<<std::endl;
 }
 
 void ProgressBar::reset() {
     progress_ = 0.0;
+}
+
+double ProgressBar::getProgress() {
+	return progress_;
 }

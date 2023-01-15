@@ -11,6 +11,7 @@ class ProgressBar {
     ProgressBar(std::string name, std::string outer_chars,  char inner_char, int length);
     ProgressBar();
     void updateProgress(double increase);
+	double getProgress();
     void display();
     void reset();
 };
