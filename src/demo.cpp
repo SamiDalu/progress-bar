@@ -9,7 +9,7 @@ int main() {
 		bar.updateProgress(0.35); //for demonstrative purposes
 		bar.display();
 	}
-	std::cout<<"\nDownload complete!"<<std::endl;
+	std::cout<<"Download complete!\n"<<std::endl;
 	
 	while (dflt.getProgress() < 1.0) {
 		dflt.updateProgress(0.35); //for demonstrative purposes
